@@ -3,8 +3,8 @@
 import requests
 import json
 
-input = "mikebug"
-
+input = u = input('GitHub username: ')
+#input = mikebug
 def main(input):
     if (input == "") or (not isinstance(input,str)):
         return "Invalid Inputs"
