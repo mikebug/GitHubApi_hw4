@@ -3,7 +3,7 @@
 import requests
 import json
 
-
+input = "mikebug"
 
 def main(input):
     if (input == "") or (not isinstance(input,str)):
