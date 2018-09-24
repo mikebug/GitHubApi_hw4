@@ -15,9 +15,9 @@ def main(input):
     try:
         for i in list:
             name = i['name']
-            commits = requests.get('https://api.github.com/repos/' + input + '/' + name + '/commits')
-            commits_data = len(commits.json())
-        print('Repository Name:' + name + ' Number of commits: ' + str(commits_data))
+            c = requests.get('https://api.github.com/repos/' + input + '/' + name + '/commits')
+            commits_data = len(c.json())
+            print('Repository Name:' + name + ' Number of commits: ' + str(commits_data))
     except:
         pass
     return False
