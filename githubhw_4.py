@@ -8,7 +8,7 @@ input = input("GitHub profile name: ")
 
 def main(input):
     if (input == "") or (not isinstance(input,str)):
-        return "Invalid inputs"
+        return "Invalid Inputs"
     else:
         repo = requests.get('https://api.github.com/users/' + input + '/repos')
         list = json.loads(repo.text)
@@ -21,9 +21,6 @@ def main(input):
     except:
         pass
     return False
-
-
-
 
 
 print(main(input))
