@@ -4,7 +4,6 @@ import requests
 import json
 
 
-input = input("GitHub profile name: ")
 
 def main(input):
     if (input == "") or (not isinstance(input,str)):
