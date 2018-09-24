@@ -20,7 +20,7 @@ def main(input):
             print('Repository Name:' + name + ' Number of commits: ' + str(commits_data))
     except:
         pass
-    return False
+    return "End"
 
 
 print(main(input))
