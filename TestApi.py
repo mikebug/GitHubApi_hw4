@@ -5,10 +5,6 @@ from githubhw_4 import get_github_info
 from unittest import mock
 
 class Test(unittest.TestCase):
-    def test0_repo(self):
-        self.assertEqual(get_github_info(''), "Invalid Inputs")
-        self.assertEqual(get_github_info([]), "Invalid Inputs")
-
 
     @mock.patch('githubhw_4.get_github_info')
     def test1_repositories(self, mock_get_repositories):
