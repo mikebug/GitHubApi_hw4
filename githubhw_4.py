@@ -3,9 +3,8 @@
 import requests
 import json
 
-input = "mikebug"
 
-def main(input):
+def get_github_info(input):
     if (input == "") or (not isinstance(input,str)):
         return "Invalid Inputs"
     else:
@@ -21,5 +20,6 @@ def main(input):
         pass
     return "End"
 
-
-print(main(input))
+if __name__ == '__main__':
+    input = input('GitHub username: ')
+    print(get_github_info(input))
