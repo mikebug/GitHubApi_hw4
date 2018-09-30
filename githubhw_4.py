@@ -3,8 +3,7 @@
 import requests
 import json
 
-input = u = input('GitHub username: ')
-#input = mikebug
+input = "mikebug"
 
 def main(input):
     if (input == "") or (not isinstance(input,str)):
